@@ -1,11 +1,12 @@
 import {Header , Footer} from '../component/Header';
 import './css/AppAffichage.css';
-import { InsererLieu } from '../component/InsertLieu';
-function InsertionLieu(){
+import { ListeLieu } from '../component/ListeLieu';
+
+function ListeDesLieux(){
     return(
         <>
             <Header/>
-            <InsererLieu/>
+            <ListeLieu/>
             <div className="footer">
                 <Footer/>
             </div>
@@ -13,4 +14,4 @@ function InsertionLieu(){
     );
 }
 
-export default InsertionLieu;
+export default ListeDesLieux;
