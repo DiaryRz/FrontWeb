@@ -9,7 +9,7 @@ export function InsererLieu() {
     e.preventDefault()
     const lieu = {nomLieu}
     console.log(lieu)
-    fetch('http://localhost:8081/lieux/create' ,{
+    fetch('http://localhost:8081/lieux/create' , {
       method:"POST",
       headers : {"Content-Type":"application/json"},
       body : JSON.stringify(lieu)
