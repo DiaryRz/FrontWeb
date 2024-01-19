@@ -35,7 +35,12 @@ li {
     height: 2%;
 }
 
-a{
+.contenair a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.footer a{
     color: black !important;
     text-decoration: none !important;
 }
