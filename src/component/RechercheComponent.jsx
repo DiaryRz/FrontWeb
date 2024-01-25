@@ -44,6 +44,7 @@ export function RechercheFonction() {
             <div className='Valider'>
                 <input type="submit" value="Inserer"/>
             </div>
+            
         </form>
     </> 
     
