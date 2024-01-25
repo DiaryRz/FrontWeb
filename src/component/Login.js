@@ -34,6 +34,7 @@ const Login = () => {
                         </div>
                         <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px'}}>Login</button>
                     </form>
+                    <li className='Chaque'><Link to="/insertionModel">Inserer Model</Link></li>
                 </div>
 
         </>
