@@ -7,6 +7,7 @@ import ListeDesLieux from './page/SelectLieu';
 import Login from './component/Login';
 import InsertionCategorie from './component/InsertionCategorie';
 import ListeCarburant from './page/ListeCarburant';
+import Recherche from './page/Recherche';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/SelectLieu' element={ <ListeDesLieux /> }></Route>
           <Route path='/insertionCategorie' element = {<InsertionCategorie/> }></Route>
           <Route path='/ListeCarburant' element = {<ListeCarburant/> }></Route>
+          <Route path='/Recherche' element = {<Recherche/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
