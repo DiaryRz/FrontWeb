@@ -16,7 +16,7 @@ export function ListeLieu() {
    
   return (
     <div className="container mt-5">
-      <h2>Inserer votre lieu</h2>
+      <h2>Liste de lieu</h2>
             <div>
                 <table border='1px'>
                     <tr>
