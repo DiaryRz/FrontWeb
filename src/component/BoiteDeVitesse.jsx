@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/Model.css';
-import '../assets/bootstrap-5.0.2-dist/css/bootstrap.min.css';
+import '../assets/bootstrap/css/bootstrap.min.css';
 
 export function InsererBoiteDeVitesse() {
   const[nomBoiteDeVitesse,setName]=useState('')

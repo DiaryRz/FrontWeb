@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Header.css';
-import '../assets/bootstrap-5.0.2-dist/css/bootstrap.min.css';
+import '../assets/bootstrap/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 export function Header() {
