@@ -7,8 +7,10 @@ import ListeDesLieux from './page/SelectLieu';
 import Login from './component/Login';
 import InsertionCategorie from './component/InsertionCategorie';
 import ListeCarburant from './page/ListeCarburant';
-import ListeAnnonceFavorie from './page/SelectAnnonceFavorie';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ListeAnnonce } from './component/ListeAnnonce';
+import { ListeFavorie } from './component/ListeAnnonceFavorie';
+
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
           <Route path='/SelectLieu' element={ <ListeDesLieux /> }></Route>
           <Route path='/insertionCategorie' element = {<InsertionCategorie/> }></Route>
           <Route path='/ListeCarburant' element = {<ListeCarburant/> }></Route>
-          <Route path='/ListeAnnonceFavorie' element= {<ListeAnnonceFavorie/> }></Route>
+          <Route path='/ListeFavorie' element = {<ListeFavorie/> }></Route>
+          <Route path='/ListeAnnonce' element = {<ListeAnnonce/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>

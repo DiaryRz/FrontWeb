@@ -2,45 +2,44 @@ import React, { useEffect, useState } from 'react';
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
 
-export function ListeAnnonceFavorie() {
-  const[ListeAnnonceFavorie,setListeAnnonceFavorie] = useState([])
+export function ListeFavorie() {
+  const[ListeLieu,setListeLieu] = useState([])
 
   useEffect(()=>{
     fetch('http://localhost:8081/listeAnnonceFavorie')
     .then(res=>res.json())
     .then((result)=>{
-      setListeAnnonceFavorie(result);
+      setListeLieu(result);
     }
     ) 
   }, [])
    
   return (
     <div className="container mt-5">
-      <h2>Liste des annonces favories</h2>
+      <h2>Liste des annonces favories </h2>
             <div>
                 <table border='1px'>
                     <tr>
-                        <th>dateheureannonce</th>
-                        <th>description</th>
-                        <th>annee</th>
-                        <th>prix</th>
-                        <th>imatricule</th>
-                        <th>nomutilisateur</th>
-                        <th>nomlieu</th>
-                        <th>idfavorie</th>
+                      <th>dateheureannonce</th>
+                      <th>description</th>
+                      <th>annee</th>
+                      <th>prix</th>
+                      <th>imatricule</th>
+                      <th>nomutilisateur</th>
+                      <th>nomlieu</th>
+                      <th>idfavorie</th>
                     </tr>
-                    {ListeAnnonceFavorie.map(liste => (
+                    {ListeLieu.map(liste => (
                         <tr>
-                            <td key={liste.id}>
-                                {liste.dateHeureAnnonce}
-                                {liste.description}
-                                {liste.annee}
-                                {liste.prix}
-                                {liste.imatricule}
-                                {liste.nomUtilisateur}
-                                {liste.nomLieu}
-                                {liste.idFavorie}
-                            </td>
+                            <td>{liste.dateHeureAnnonce}</td> 
+                            <td>{liste.description}</td>  
+                            <td>{liste.annee}</td> 
+                            <td>{liste.prix}</td> 
+                            <td>{liste.imatricule}</td> 
+                            <td>{liste.nomUtilisateur}</td> 
+                            <td>{liste.nomLieu}</td> 
+                            <td>{liste.idFavorie}</td> 
+                            
                         </tr>
                     ))}
                 </table>
@@ -50,3 +49,4 @@ export function ListeAnnonceFavorie() {
     
   );
 }
+

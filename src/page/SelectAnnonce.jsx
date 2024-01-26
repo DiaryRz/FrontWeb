@@ -1,12 +1,12 @@
 import {Header , Footer} from '../component/Header';
 import './css/AppAffichage.css';
-import {ListeFavorie} from '../component/ListeAnnonceFavorie';
+import {ListeAnnonce} from '../component/ListeAnnonce';
 
-function selectAnnonceFavorie(){
+function selectAnnonce(){
     return(
         <>
             <Header/>
-            <ListeFavorie/>
+            <ListeAnnonce/>
             <div className="footer">
                 <Footer/>
             </div>
@@ -14,4 +14,4 @@ function selectAnnonceFavorie(){
     );
 }
 
-export default selectAnnonceFavorie;
+export default selectAnnonce;
