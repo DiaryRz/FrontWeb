@@ -1,7 +1,67 @@
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
+import React, { useEffect, useState } from 'react';
 
 export function RechercheFonction() {
+    const[BoiteVitesse, setBoiteVitesse] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/boiteDeVitesses')
+        .then(res=>res.json())
+        .then((result)=>{
+            setBoiteVitesse(result);
+        }
+        ) 
+    }, [])
+
+    const[Carburant, setCarburant] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/carburants')
+        .then(res=>res.json())
+        .then((result)=>{
+            setCarburant(result);
+        }
+        ) 
+    }, [])
+
+    const[Categorie, setCategorie] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/categories')
+        .then(res=>res.json())
+        .then((result)=>{
+            setCategorie(result);
+        }
+        ) 
+    }, [])
+
+    const[Lieu, setLieu] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/lieux')
+        .then(res=>res.json())
+        .then((result)=>{
+            setLieu(result);
+        }
+        ) 
+    }, [])
+
+    const[Marque, setMarque] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/marques')
+        .then(res=>res.json())
+        .then((result)=>{
+            setMarque(result);
+        }
+        ) 
+    }, [])
+
+    const[Model, setModel] =useState([])
+    useEffect(()=>{
+        fetch('http://localhost:8081/models')
+        .then(res=>res.json())
+        .then((result)=>{
+            setModel(result);
+        }
+        ) 
+    }, [])
    
   return (
     <>
@@ -18,27 +78,51 @@ export function RechercheFonction() {
             </div>
             <div className="form-group">
                 <label htmlFor="idBoitedevitesse">Boite de vitesse :</label>
-                <input type="text" className="form-control" id="idBoitedevitesse" placeholder="Inserer Boite de vitesse" />
+                <select className="form-control" id="idBoitedevitesse">
+                        {BoiteVitesse.map(liste => (
+                            <option value="{liste.idBoiteDeVitesse}">{liste.nomBoiteDeVitesse}</option>
+                        ))}
+                </select>
             </div>
             <div className="form-group">
                 <label htmlFor="idCarburant">Carburant :</label>
-                <input type="text" className="form-control" id="idCarburant" placeholder="Inserer Carburant" />
+                <select className="form-control" id="idCarburant">
+                        {Carburant.map(liste => (
+                            <option value="{liste.idCarburant}">{liste.nomCarburant}</option>
+                        ))}
+                </select>
             </div>
             <div className="form-group">
-                <label htmlFor="idCategorie">Carburant :</label>
-                <input type="text" className="form-control" id="idCategorie" placeholder="Inserer Categorie" />
+                <label htmlFor="idCategorie">Categorie :</label>
+                <select className="form-control" id="idCategorie">
+                        {Categorie.map(liste => (
+                            <option value="{liste.idCategorie}">{liste.nomCategorie}</option>
+                        ))}
+                </select>
             </div>
             <div className="form-group">
                 <label htmlFor="idLieu">Lieu :</label>
-                <input type="text" className="form-control" id="idLieu" placeholder="Inserer le Lieu" />
+                <select className="form-control" id="idLieu">
+                        {Lieu.map(liste => (
+                            <option value="{liste.idLieu}">{liste.nomLieu}</option>
+                        ))}
+                </select>
             </div>
             <div className="form-group">
                 <label htmlFor="idMarque">Marque :</label>
-                <input type="text" className="form-control" id="idMarque" placeholder="Inserer une Marque" />
+                <select className="form-control" id="idMarque">
+                        {Marque.map(liste => (
+                            <option value="{liste.idMarque}">{liste.nomMarque}</option>
+                        ))}
+                </select>
             </div>
             <div className="form-group">
                 <label htmlFor="idModel">Model :</label>
-                <input type="text" className="form-control" id="idModel" placeholder="Inserer un Model" />
+                <select className="form-control" id="idModel">
+                        {Model.map(liste => (
+                            <option value="{liste.idModel}">{liste.nomModel}</option>
+                        ))}
+                </select>
             </div>
 
             <div className='Valider'>
