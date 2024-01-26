@@ -7,7 +7,6 @@ import ListeDesLieux from './page/SelectLieu';
 import Login from './component/Login';
 import InsertionCategorie from './component/InsertionCategorie';
 import ListeCarburant from './page/ListeCarburant';
-import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
