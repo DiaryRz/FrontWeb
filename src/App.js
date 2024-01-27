@@ -10,6 +10,7 @@ import ListeCarburant from './page/ListeCarburant';
 import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
 import AnnonceAValider from './page/AnnonceAValiderPage';
+import Chart from './page/ChartPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/Recherche' element = {<Recherche/> }></Route>
           <Route path='/ListeCategorie' element = {<ListeCategorie/> }></Route>
           <Route path='/AnnonceAValider' element = {<AnnonceAValider/> }></Route>
+          <Route path='/statistic' element = {<Chart/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
