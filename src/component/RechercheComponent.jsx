@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 export function RechercheFonction() {
     const[BoiteVitesse, setBoiteVitesse] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/boiteDeVitesses')
+        fetch('https://projsbmrrj1-production.up.railway.app/boiteDeVitesses')
         .then(res=>res.json())
         .then((result)=>{
             setBoiteVitesse(result);
@@ -15,7 +15,7 @@ export function RechercheFonction() {
 
     const[Carburant, setCarburant] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/carburants')
+        fetch('https://projsbmrrj1-production.up.railway.app/carburants')
         .then(res=>res.json())
         .then((result)=>{
             setCarburant(result);
@@ -25,7 +25,7 @@ export function RechercheFonction() {
 
     const[Categorie, setCategorie] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/categories')
+        fetch('https://projsbmrrj1-production.up.railway.app/categories')
         .then(res=>res.json())
         .then((result)=>{
             setCategorie(result);
@@ -35,7 +35,7 @@ export function RechercheFonction() {
 
     const[Lieu, setLieu] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/lieux')
+        fetch('https://projsbmrrj1-production.up.railway.app/lieux')
         .then(res=>res.json())
         .then((result)=>{
             setLieu(result);
@@ -45,7 +45,7 @@ export function RechercheFonction() {
 
     const[Marque, setMarque] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/marques')
+        fetch('https://projsbmrrj1-production.up.railway.app/marques')
         .then(res=>res.json())
         .then((result)=>{
             setMarque(result);
@@ -55,7 +55,7 @@ export function RechercheFonction() {
 
     const[Model, setModel] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:8081/models')
+        fetch('https://projsbmrrj1-production.up.railway.app/models')
         .then(res=>res.json())
         .then((result)=>{
             setModel(result);

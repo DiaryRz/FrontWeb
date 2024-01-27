@@ -8,7 +8,7 @@ export function InsererCarburant() {
     e.preventDefault()
     const carb = {nomCarburant}
     console.log(carb)
-    fetch('projsbmrrj1-production.up.railway.app/carburants/create' ,{
+    fetch('https://projsbmrrj1-production.up.railway.app/carburants/create' ,{
       method:"POST",
       headers : {"Content-Type":"application/json"},
       body : JSON.stringify(carb)

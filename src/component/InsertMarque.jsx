@@ -8,7 +8,7 @@ export function InsererMarque() {
     e.preventDefault()
     const lieu = {nomMarque}
     console.log(lieu)
-    fetch('http://localhost:8081/marques/create' ,{
+    fetch('https://projsbmrrj1-production.up.railway.app/create' ,{
       method:"POST",
       headers : {"Content-Type":"application/json"},
       body : JSON.stringify(lieu)
