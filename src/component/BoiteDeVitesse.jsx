@@ -8,7 +8,7 @@ export function InsererBoiteDeVitesse() {
     e.preventDefault()
     const boiteVitesse = {nomBoiteDeVitesse}
     console.log(boiteVitesse)
-    fetch('http://localhost:8081/boiteDeVitesses/create' , {
+    fetch('https://projsbmrrj1-production.up.railway.app/boiteDeVitesses/create' , {
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body : JSON.stringify(boiteVitesse)

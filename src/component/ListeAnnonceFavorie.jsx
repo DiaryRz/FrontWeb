@@ -6,7 +6,7 @@ export function ListeFavorie() {
   const[ListeLieu,setListeLieu] = useState([])
 
   useEffect(()=>{
-    fetch('http://localhost:8081/listeAnnonceFavorie')
+    fetch('https://projsbmrrj1-production.up.railway.app/listeAnnonceFavorie')
     .then(res=>res.json())
     .then((result)=>{
       setListeLieu(result);
