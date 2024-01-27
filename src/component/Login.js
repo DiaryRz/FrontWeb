@@ -34,11 +34,10 @@ const Login = () => {
                             <input type="password" className="form-control" id="password" placeholder="Enter Password" />
                         </div>
                         <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px'}}>
-                            <li className='Chaque'><Link to="/InsertionCarburant">Inserer Carburant</Link></li>
+                            <Link to="/InsertionCarburant">Valider</Link>
                         </button>
                     </form>
-                    {/* <li className='Chaque'><Link to="/InsertionCarburant">Inserer Carburant</Link></li>
-                    <li className='Chaque'><Link to="/ListeCarburant">Liste Carburant</Link></li> */}
+                   
                 </div>
 
         </>
