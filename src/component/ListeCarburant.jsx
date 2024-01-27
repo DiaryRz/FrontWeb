@@ -6,7 +6,7 @@ export function Liste() {
   const[ListeCarburant,setListeCarburant] = useState([])
 
   useEffect(()=>{
-    fetch('projsbmrrj1-production.up.railway.app/carburants')
+    fetch('https://projsbmrrj1-production.up.railway.app/carburants')
     .then(res=>res.json())
     .then((result)=>{
       setListeCarburant(result);
