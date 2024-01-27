@@ -10,6 +10,8 @@ import ListeCarburant from './page/ListeCarburant';
 import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ListeBoiteDevitesse } from './component/ListeDeBoiteDeVitesse';
+import { ListeDesMarque } from './component/ListeDesMarque';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path='/ListeCarburant' element = {<ListeCarburant/> }></Route>
           <Route path='/Recherche' element = {<Recherche/> }></Route>
           <Route path='/ListeCategorie' element = {<ListeCategorie/> }></Route>
+          <Route path='/ListeBoiteDeVitesse' element = {<ListeBoiteDevitesse/> }></Route>
+          <Route path='/ListeDesMarques' element = {<ListeDesMarque/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
