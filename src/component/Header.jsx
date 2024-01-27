@@ -9,7 +9,7 @@ export function Header() {
             <div className="row contenair">
                 <div className="col-md-8 imagehaut"><img src="./image/logo.png" alt='' width={40} height={40}/></div>
                 <ul className="col-md-4 Ulheader">
-                    <li><Link to="/">Recherche</Link></li>
+                    <li><Link to="/Recherche">Recherche</Link></li>
                     <li><Link to="/">Statistic</Link></li>
                     <li><Link to="/">Annonce</Link></li>
                 </ul>
