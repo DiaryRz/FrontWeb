@@ -33,10 +33,12 @@ const Login = () => {
                         <div className="mb-3" style={{marginTop:'40px'}}>
                             <input type="password" className="form-control" id="password" placeholder="Enter Password" />
                         </div>
-                        <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px'}}>Login</button>
+                        <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px'}}>
+                            <li className='Chaque'><Link to="/InsertionCarburant">Inserer Carburant</Link></li>
+                        </button>
                     </form>
-                    <li className='Chaque'><Link to="/InsertionCarburant">Inserer Carburant</Link></li>
-                    <li className='Chaque'><Link to="/ListeCarburant">Liste Carburant</Link></li>
+                    {/* <li className='Chaque'><Link to="/InsertionCarburant">Inserer Carburant</Link></li>
+                    <li className='Chaque'><Link to="/ListeCarburant">Liste Carburant</Link></li> */}
                 </div>
 
         </>
