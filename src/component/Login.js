@@ -8,8 +8,7 @@ const loginContainer = {
     alignItems: 'center',
     height: '100vh',
     background: '#b2adad',
-};
-    
+};  
 
   
 const loginForm = {
