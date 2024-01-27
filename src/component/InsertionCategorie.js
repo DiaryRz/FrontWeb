@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../assets/bootstrap/css/bootstrap.min.css'; 
 import './css/Model.css';
 import {Header , Footer} from './../component/Header';
+import {NavBar} from '../component/NavBar';
 
 const InsertionCategorie = () => { 
     const[nomCategorie ,setNomCategorie] = useState('')
