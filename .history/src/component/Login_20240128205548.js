@@ -1,28 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
- /* Login.css */
- const loginContainer = {
-    display:'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    background: 'rgb(237, 237, 247)',
-};  
-
-  
-const loginForm = {
-    width: '600px',
-    padding: '20px',
-    border: '2px solid #ccc',
-    borderRadius:'10px',
-    backgroundColor: 'rgb(213, 213, 219)',
-    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-    
-    
-};
-
 const Login = () => {
     const [nomUtilisateur, setnomUtilisateur] = useState('');
     const [mdp, setmdp] = useState(''); 
@@ -56,25 +34,26 @@ const Login = () => {
     
 
     return (
-       
+        <form onSubmit={Inserer}>
            <div style={loginContainer}>
-                    <form style={loginForm} onSubmit={Inserer}>
-                        <div style={{ fontSize: '30px', marginBottom: '20px' ,color:'rgb(17, 17, 75)',marginLeft:'40%'}}><b>Login</b></div>
+                    <form style={loginForm}>
+                        <div style={{ fontSize: '30px',fontFamily:'serif', marginBottom: '20px' ,color:'chocolate'}}><b>Login</b></div>
                         <div className="mb-3"> 
-                            <input type="text" className="form-control" placeholder="Entrer votre Email" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
+                        <input type="text" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
                         </div>
                         <div className="mb-3" style={{marginTop:'40px'}}>
-                            <input type="password" className="form-control" placeholder="Entrer votre de passe" value={mdp} onChange={(e) => setmdp(e.target.value)} />
+                        <input type="password" value={mdp} onChange={(e) => setmdp(e.target.value)} />
                         </div>
-                        <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px',marginLeft:'20%'}}>
-                            Connexion 
+                        <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px'}}>
+                            
                         </button>
                     </form>
                    
-             </div>
-      
+                </div>
+        </form>
     );
 };
+
 export default Login;
 
  

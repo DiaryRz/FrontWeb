@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    background: 'rgb(237, 237, 247)',
+    background: '#b2adad',
 };  
 
   
@@ -17,9 +17,7 @@ const loginForm = {
     padding: '20px',
     border: '2px solid #ccc',
     borderRadius:'10px',
-    backgroundColor: 'rgb(213, 213, 219)',
-    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-    
+    backgroundColor: 'white',
     
 };
 
@@ -56,25 +54,28 @@ const Login = () => {
     
 
     return (
-       
-           <div style={loginContainer}>
-                    <form style={loginForm} onSubmit={Inserer}>
-                        <div style={{ fontSize: '30px', marginBottom: '20px' ,color:'rgb(17, 17, 75)',marginLeft:'40%'}}><b>Login</b></div>
-                        <div className="mb-3"> 
-                            <input type="text" className="form-control" placeholder="Entrer votre Email" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
+        <form onSubmit={Inserer}>
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col-md-6">
+                    <form className="border rounded p-4" style={{ backgroundColor: '#f8f9fa' }}>
+                        <h2 className="text-center mb-4" style={{ color: 'chocolate', fontFamily: 'serif' }}>Login</h2>
+                        <div className="mb-3">
+                            <input type="email" className="form-control" placeholder="Email" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
                         </div>
-                        <div className="mb-3" style={{marginTop:'40px'}}>
-                            <input type="password" className="form-control" placeholder="Entrer votre de passe" value={mdp} onChange={(e) => setmdp(e.target.value)} />
+                        <div className="mb-3">
+                            <input type="password" className="form-control" placeholder="Mot de passe" value={mdp} onChange={(e) => setmdp(e.target.value)} />
                         </div>
-                        <button type="submit" className="btn btn-success" style={{width:'300px',marginTop:'30px',marginLeft:'20%'}}>
-                            Connexion 
-                        </button>
+                        <button type="submit" className="btn btn-success btn-block">Connexion</button>
                     </form>
-                   
-             </div>
-      
+                </div>
+            </div>
+        </div>
+    </form>
+    
     );
 };
+
 export default Login;
 
  
