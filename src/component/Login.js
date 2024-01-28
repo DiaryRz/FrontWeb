@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../assets/bootstrap/css/bootstrap.min.css';
 
 const Login = () => {
     const [nomUtilisateur, setnomUtilisateur] = useState('');
@@ -35,20 +34,18 @@ const Login = () => {
     
 
     return (
-        <div style={loginContainer}>
-            <form onSubmit={Inserer}>
-                <div style={{ fontSize: '30px',fontFamily:'serif', marginBottom: '20px' ,color:'chocolate'}}><b>Login</b></div>
-                <div className="mb-3"> 
+        <form onSubmit={Inserer}>
+            <label>nomUtilisateur: 
                 <input type="text" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
-                </div>
-                <div className="mb-3" style={{marginTop:'40px'}}>
+            </label>
+            <label>Mot de passe: 
                 <input type="password" value={mdp} onChange={(e) => setmdp(e.target.value)} />
-                </div>
-                <button type="submit">Connexion</button>
-            </form>
-        </div>
+            </label>
+            <button type="submit">Connexion</button>
+        </form>
     );
 };
 
 export default Login;
 
+ 
