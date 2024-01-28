@@ -11,6 +11,8 @@ import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
 import AnnonceAValider from './page/AnnonceAValiderPage';
 import Chart from './page/ChartPage';
+import { ListeBoiteDevitesse } from './component/ListeDeBoiteDeVitesse';
+import { ListeDesMarque } from './component/ListeDesMarque';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
