@@ -15,6 +15,7 @@ export function NavBar() {
                     <li className='Chaque'><Link to="/InsertionLieu">Inserer Lieu</Link></li>
                     <li className='Chaque'><Link to="/InsertionMarque">Inserer Marque</Link></li>
                     <li className='Chaque'><Link to="/insertionCategorie">Inserer Categorie</Link></li>
+                    <li className='Chaque'><Link to="/statistic">Statistic</Link></li>
                 </ul>
             </div>
         </>
