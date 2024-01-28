@@ -56,9 +56,9 @@ const Login = () => {
     
 
     return (
-       
+        <form onSubmit={Inserer}>
            <div style={loginContainer}>
-                    <form style={loginForm} onSubmit={Inserer}>
+                    <form style={loginForm}>
                         <div style={{ fontSize: '30px', marginBottom: '20px' ,color:'rgb(17, 17, 75)',marginLeft:'40%'}}><b>Login</b></div>
                         <div className="mb-3"> 
                             <input type="text" className="form-control" placeholder="Entrer votre Email" value={nomUtilisateur} onChange={(e) => setnomUtilisateur(e.target.value)} />
@@ -71,8 +71,8 @@ const Login = () => {
                         </button>
                     </form>
                    
-             </div>
-      
+                </div>
+        </form>
     );
 };
 export default Login;

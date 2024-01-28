@@ -11,6 +11,8 @@ import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
 import AnnonceAValider from './page/AnnonceAValiderPage';
 import Chart from './page/ChartPage';
+import { ListeBoiteDevitesse } from './component/ListeDeBoiteDeVitesse';
+import { ListeDesMarque } from './component/ListeDesMarque';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ListeDesVit from './page/ListeBoiteDeVitessePage';
 import ListeDesMar from './page/ListeMarquePage';
@@ -31,6 +33,8 @@ function App() {
           <Route path='/ListeCarburant' element = {<ListeCarburant/> }></Route>
           <Route path='/Recherche' element = {<Recherche/> }></Route>
           <Route path='/ListeCategorie' element = {<ListeCategorie/> }></Route>
+          
+
           <Route path='/ListeBoiteVitesse' element = {<ListeDesVit/> }></Route>
           <Route path='/ListeMarque' element = {<ListeDesMar/> }></Route>
           <Route path='/AnnonceAValider' element = {<AnnonceAValider/> }></Route>

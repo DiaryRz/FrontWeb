@@ -56,7 +56,7 @@ const Login = () => {
     
 
     return (
-       
+        <form >
            <div style={loginContainer}>
                     <form style={loginForm} onSubmit={Inserer}>
                         <div style={{ fontSize: '30px', marginBottom: '20px' ,color:'rgb(17, 17, 75)',marginLeft:'40%'}}><b>Login</b></div>
@@ -71,7 +71,7 @@ const Login = () => {
                         </button>
                     </form>
                    
-             </div>
+                </div>
       
     );
 };
