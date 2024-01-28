@@ -11,7 +11,7 @@ export function Header() {
                 <ul className="col-md-4 Ulheader">
                     <li><Link to="/Recherche">Recherche</Link></li>
                     <li><Link to="/statistic">Statistic</Link></li>
-                    <li><Link to="/">Annonce</Link></li>
+                    <li><Link to="/AnnonceAValider">Annonce à valider</Link></li>
                 </ul>
             </div>
         </>
