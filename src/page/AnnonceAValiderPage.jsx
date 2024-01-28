@@ -1,17 +1,15 @@
-import {Header , Footer} from '../component/Header';
+import {Header , Footer} from './../component/Header';
 import './css/AppAffichage.css';
-
 import {NavBar} from '../component/NavBar';
+import {ListeAnnonce} from './../component/AnnonceAValider'
 
-import { ListeBoiteDevitesse } from '../component/ListeDeBoiteDeVitesse';
-
-function selectBoiteDeVitesse(){
+function Affichage(){
     return(
         <>
             <Header/>
             <div className='row'>
                 <div className='col-md-4'><NavBar/></div>
-                <div className='col-md-8'><ListeBoiteDevitesse/></div>
+                <div className='col-md-8'><ListeAnnonce/></div>
             </div>
             <div className="footer">
                 <Footer/>
@@ -20,4 +18,5 @@ function selectBoiteDeVitesse(){
     );
 }
 
-export default selectBoiteDeVitesse;
+export default Affichage;
+
