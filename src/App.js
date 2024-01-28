@@ -9,9 +9,11 @@ import InsertionCategorie from './component/InsertionCategorie';
 import ListeCarburant from './page/ListeCarburant';
 import ListeCategorie from './page/ListeCategorie';
 import Recherche from './page/Recherche';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AnnonceAValider from './page/AnnonceAValiderPage';
+import Chart from './page/ChartPage';
 import { ListeBoiteDevitesse } from './component/ListeDeBoiteDeVitesse';
 import { ListeDesMarque } from './component/ListeDesMarque';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
           <Route path='/ListeCategorie' element = {<ListeCategorie/> }></Route>
           <Route path='/ListeBoiteDeVitesse' element = {<ListeBoiteDevitesse/> }></Route>
           <Route path='/ListeDesMarques' element = {<ListeDesMarque/> }></Route>
+
+          <Route path='/AnnonceAValider' element = {<AnnonceAValider/> }></Route>
+          <Route path='/statistic' element = {<Chart/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
