@@ -43,13 +43,21 @@ export function ListeAnnonce() {
                             liste.etatAnnonce === 0 && (
                                 <div className='ChaqueDiv' key={liste.idAnnonce}>
                                     <ul>
-                                        <li>{liste.description}</li>
-                                        <li>{liste.dateHeureAnnonce}</li>
-                                        <li>{liste.couleur}</li>
-                                        <li>{liste.nomCreateur}</li>
-                                        <li>{liste.nomLieu}</li>
-                                        <li>{liste.annee}</li>
-                                        <li>{liste.prix}</li>
+                                        <div className='DivList'>
+                                            <li>{liste.description}</li>
+                                            <li>{liste.dateHeureAnnonce}</li>
+                                        </div>
+                                        <div className='DivList'>
+                                            <li>{liste.couleur}</li>
+                                            <li>{liste.nomCreateur}</li>
+                                        </div>
+                                        <div className='DivList'>
+                                            <li>{liste.nomLieu}</li>
+                                            <li>{liste.annee}</li>
+                                        </div >
+                                        <div className='DivList'>
+                                            <li>{liste.prix}</li>
+                                        </div>
                                         <li className='Val'>
                                             <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
                                         </li>

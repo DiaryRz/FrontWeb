@@ -9,22 +9,9 @@
     margin-right: 20%;
     border-bottom-right-radius: 2%;
     border-top-right-radius: 2%;
-    text-align: center;
 }
 
-.ChaqueDiv li{
+.DivList li{
     list-style: none;
-}
-
-.Val{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #3498db;
+    display: flex;
 }
