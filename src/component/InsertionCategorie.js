@@ -45,7 +45,7 @@ const InsertionCategorie = () => {
                                         <input type="submit" value="Inserer" onClick={Inserer} />
                                     </div>
                                 </form>
-                                <button>
+                                <button className='Valider' style={{backgroundColor:'white'}}>
                                     <Link to="/ListeCategorie">Voir les Categories</Link>
                                 </button>
                                 </div>

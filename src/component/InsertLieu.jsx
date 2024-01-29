@@ -34,7 +34,7 @@ export function InsererLieu() {
                     <input type="submit" value="Inserer" onClick={Inserer}/>
                 </div>
             </form>
-            <button>
+            <button className='Valider' style={{backgroundColor:'white'}}>
               <Link to="/SelectLieu">Voir les lieux existants</Link>
             </button>
     </div>

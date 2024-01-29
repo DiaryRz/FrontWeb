@@ -33,7 +33,7 @@ export function InsererMarque() {
                     <input type="submit" value="Inserer" onClick={Inserer}/>
                 </div>
             </form>
-            <button>
+            <button className='Valider' style={{backgroundColor:'white'}}>
                   <Link to="/ListeMarque">Voir les Marques</Link>
               </button>
     </div>

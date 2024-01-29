@@ -35,7 +35,7 @@ export function InsererBoiteDeVitesse() {
                     <input type="submit" value="Inserer" onClick={Inserer}/>
                 </div>
             </form>
-            <button>
+            <button className='Valider' style={{backgroundColor:'white'}}>
               <Link to="/ListeBoiteVitesse">Voir les Boites de vitesse</Link>
             </button>
     </div>

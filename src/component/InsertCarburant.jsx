@@ -33,7 +33,7 @@ export function InsererCarburant() {
                     <input type="submit" value="Inserer" onClick={Inserer} />
                 </div>
             </form>
-            <button>
+            <button className='Valider' style={{backgroundColor:'white'}}>
               <Link to="/ListeCarburant">Voir les Carburants</Link>
             </button>
     </div>

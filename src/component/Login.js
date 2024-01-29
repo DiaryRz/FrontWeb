@@ -24,7 +24,7 @@ const loginForm = {
 };
 
 const Login = () => {
-    const [nomUtilisateur, setnomUtilisateur] = useState('admin');
+    const [nomUtilisateur, setnomUtilisateur] = useState('admin@gmail.com');
     const [mdp, setmdp] = useState('0000'); 
     const navigate = useNavigate();
 
