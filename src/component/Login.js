@@ -46,7 +46,7 @@ const Login = () => {
                 
                 localStorage.setItem("token", responseData);
                 console.log(localStorage.getItem("token"));
-                navigate('/insertionModel');
+                navigate('/InsertionBoiteDeVitesse');
             }
         } catch (error) {
             console.error('Une erreur s\'est produite lors de la requête :', error.message);
