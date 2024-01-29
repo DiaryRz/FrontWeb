@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 export function InsererBoiteDeVitesse() {
   const[nomBoiteDeVitesse,setName]=useState('')
@@ -34,6 +35,9 @@ export function InsererBoiteDeVitesse() {
                     <input type="submit" value="Inserer" onClick={Inserer}/>
                 </div>
             </form>
+            <button>
+              <Link to="/ListeBoiteVitesse">Voir les Boites de vitesse</Link>
+            </button>
     </div>
   );
 }
