@@ -37,11 +37,11 @@ export function ListeAnnonce() {
     return (
         <div className="container mt-5">
             <h2>Liste des annonces</h2>
-            <div className='ChaqueDiv'>
+            <div >
                         {listeAnnonce.map(liste => (
                             // Ajoutez une condition pour ne rendre que les annonces avec etatAnnonce égal à 0
                             liste.etatAnnonce === 0 && (
-                                <div  key={liste.idAnnonce}>
+                                <div className='ChaqueDiv' key={liste.idAnnonce}>
                                     <ul>
                                         <li>{liste.description}</li>
                                         <li>{liste.dateHeureAnnonce}</li>
@@ -50,7 +50,7 @@ export function ListeAnnonce() {
                                         <li>{liste.nomLieu}</li>
                                         <li>{liste.annee}</li>
                                         <li>{liste.prix}</li>
-                                        <li className='Valider'>
+                                        <li className='Val'>
                                             <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
                                         </li>
                                     </ul>
