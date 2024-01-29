@@ -34,7 +34,7 @@ export function InsererMarque() {
                 </div>
             </form>
             <button>
-                  <Link to="/ListeMarque">Voir les Categories</Link>
+                  <Link to="/ListeMarque">Voir les Marques</Link>
               </button>
     </div>
   );
