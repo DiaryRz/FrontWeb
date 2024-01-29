@@ -37,40 +37,27 @@ export function ListeAnnonce() {
     return (
         <div className="container mt-5">
             <h2>Liste des annonces</h2>
-            <div>
-                <table border='1px'>
-                    <thead>
-                        <tr>
-                            <th>description</th>
-                            <th>date d'annonce</th>
-                            <th>Couleur</th>
-                            <th>nom createur</th>
-                            <th>nom lieu</th>
-                            <th>annee</th>
-                            <th>prix</th>
-                            <td>Valider</td>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div className='ChaqueDiv'>
                         {listeAnnonce.map(liste => (
                             // Ajoutez une condition pour ne rendre que les annonces avec etatAnnonce égal à 0
                             liste.etatAnnonce === 0 && (
-                                <tr key={liste.idAnnonce}>
-                                    <td>{liste.description}</td>
-                                    <td>{liste.dateHeureAnnonce}</td>
-                                    <td>{liste.couleur}</td>
-                                    <td>{liste.nomCreateur}</td>
-                                    <td>{liste.nomLieu}</td>
-                                    <td>{liste.annee}</td>
-                                    <td>{liste.prix}</td>
-                                    <td>
-                                        <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
-                                    </td>
-                                </tr>
+                                <div  key={liste.idAnnonce}>
+                                    <ul>
+                                        <li>{liste.description}</li>
+                                        <li>{liste.dateHeureAnnonce}</li>
+                                        <li>{liste.couleur}</li>
+                                        <li>{liste.nomCreateur}</li>
+                                        <li>{liste.nomLieu}</li>
+                                        <li>{liste.annee}</li>
+                                        <li>{liste.prix}</li>
+                                        <li>
+                                            <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
+                                        </li>
+                                    </ul>
+                                </div>
                             )
                         ))}
-                    </tbody>
-                </table>
+                 
             </div>
         </div>
     );
