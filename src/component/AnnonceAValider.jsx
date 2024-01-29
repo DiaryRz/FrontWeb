@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './css/Model.css';
+import './css/AnnonceCss.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
 
 export function ListeAnnonce() {
@@ -50,7 +50,7 @@ export function ListeAnnonce() {
                                         <li>{liste.nomLieu}</li>
                                         <li>{liste.annee}</li>
                                         <li>{liste.prix}</li>
-                                        <li>
+                                        <li className='Valider'>
                                             <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
                                         </li>
                                     </ul>
