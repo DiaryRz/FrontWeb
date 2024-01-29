@@ -44,19 +44,17 @@ export function ListeAnnonce() {
                                 <div className='ChaqueDiv' key={liste.idAnnonce}>
                                     <ul>
                                         <div className='DivList'>
+                                            <li> <h1>{liste.nomCreateur}</h1> </li>
+                                        </div>
+                                        <div className='DivList'>
                                             <li>{liste.description}</li>
-                                            <li>{liste.dateHeureAnnonce}</li>
                                         </div>
                                         <div className='DivList'>
-                                            <li>{liste.couleur}</li>
-                                            <li>{liste.nomCreateur}</li>
-                                        </div>
-                                        <div className='DivList'>
-                                            <li>{liste.nomLieu}</li>
-                                            <li>{liste.annee}</li>
+                                            <li> <h5>Lieu : </h5>{liste.nomLieu}</li>
+                                            <li> <h5>Annee : </h5> {liste.annee}</li>
                                         </div >
                                         <div className='DivList'>
-                                            <li>{liste.prix}</li>
+                                            <li><h4>{liste.prix}Ariary</h4></li>
                                         </div>
                                         <li className='Val'>
                                             <input type="submit" value="Valider" onClick={() => validerAnnonce(liste.idAnnonce)} />
