@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 export function InsererModel() {
   const[nomModel ,setModel] = useState('')

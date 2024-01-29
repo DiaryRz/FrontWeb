@@ -24,8 +24,8 @@ const loginForm = {
 };
 
 const Login = () => {
-    const [nomUtilisateur, setnomUtilisateur] = useState('');
-    const [mdp, setmdp] = useState(''); 
+    const [nomUtilisateur, setnomUtilisateur] = useState('admin');
+    const [mdp, setmdp] = useState('0000'); 
     const navigate = useNavigate();
 
     const Inserer = async (e) => {

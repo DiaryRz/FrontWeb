@@ -3,6 +3,7 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 import './css/Model.css';
 import {Header , Footer} from './../component/Header';
 import {NavBar} from '../component/NavBar';
+import { Link } from 'react-router-dom';
 
 const InsertionCategorie = () => { 
     const[nomCategorie ,setNomCategorie] = useState('')
@@ -10,7 +11,7 @@ const InsertionCategorie = () => {
         e.preventDefault()
         const carb = {nomCategorie}
         console.log(carb)
-        fetch('https://projsbmrrj1-production.up.railway.app/create' , {
+        fetch('https://projsbmrrj1-production.up.railway.app/categories/create' , {
         method:"POST",
         headers : {"Content-Type":"application/json"},
         body : JSON.stringify(carb)
@@ -44,6 +45,9 @@ const InsertionCategorie = () => {
                                         <input type="submit" value="Inserer" onClick={Inserer} />
                                     </div>
                                 </form>
+                                <button>
+                                    <Link to="/ListeCategorie">Voir les Categories</Link>
+                                </button>
                                 </div>
                                 </div>
                             </div>

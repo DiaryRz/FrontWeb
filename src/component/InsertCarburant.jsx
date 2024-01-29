@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 export function InsererCarburant() {
   const[nomCarburant ,setCarburant] = useState('')
@@ -32,6 +33,9 @@ export function InsererCarburant() {
                     <input type="submit" value="Inserer" onClick={Inserer} />
                 </div>
             </form>
+            <button>
+              <Link to="/ListeCarburant">Voir les Carburants</Link>
+            </button>
     </div>
   );
 }
